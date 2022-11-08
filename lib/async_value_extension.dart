@@ -205,4 +205,28 @@ extension AsyncValueGroup on AsyncValue {
       return AsyncError(e, st);
     }
   }
+  
+  static AsyncValue<Tuple19<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19>> group19<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19>(
+      AsyncValue<T1> t1, AsyncValue<T2> t2, AsyncValue<T3> t3, AsyncValue<T4> t4, AsyncValue<T5> t5, AsyncValue<T6> t6, AsyncValue<T7> t7, AsyncValue<T8> t8, AsyncValue<T9> t9, AsyncValue<T10> t10, AsyncValue<T11> t11, AsyncValue<T12> t12, AsyncValue<T13> t13, AsyncValue<T14> t14, AsyncValue<T15> t15, AsyncValue<T16> t16, AsyncValue<T17> t17, AsyncValue<T18> t18, AsyncValue<T19> t19) {
+    if (t1 is AsyncLoading || t2 is AsyncLoading || t3 is AsyncLoading || t4 is AsyncLoading || t5 is AsyncLoading || t6 is AsyncLoading || t7 is AsyncLoading || t8 is AsyncLoading || t9 is AsyncLoading || t10 is AsyncLoading || t11 is AsyncLoading || t12 is AsyncLoading || t13 is AsyncLoading || t14 is AsyncLoading || t15 is AsyncLoading || t16 is AsyncLoading || t17 is AsyncLoading || t18 is AsyncLoading || t19 is AsyncLoading) {
+      return const AsyncLoading();
+    }
+    try {
+      return AsyncData(Tuple19(t1.value as T1, t2.value as T2, t3.value as T3, t4.value as T4, t5.value as T5, t6.value as T6, t7.value as T7, t8.value as T8, t9.value as T9, t10.value as T10, t11.value as T11, t12.value as T12, t13.value as T13, t14.value as T14, t15.value as T15, t16.value as T16, t17.value as T17, t18.value as T18, t19.value as T19));
+    } catch (e, st) {
+      return AsyncError(e, st);
+    }
+  }
+
+  static AsyncValue<Tuple20<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20>> group20<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20>(
+      AsyncValue<T1> t1, AsyncValue<T2> t2, AsyncValue<T3> t3, AsyncValue<T4> t4, AsyncValue<T5> t5, AsyncValue<T6> t6, AsyncValue<T7> t7, AsyncValue<T8> t8, AsyncValue<T9> t9, AsyncValue<T10> t10, AsyncValue<T11> t11, AsyncValue<T12> t12, AsyncValue<T13> t13, AsyncValue<T14> t14, AsyncValue<T15> t15, AsyncValue<T16> t16, AsyncValue<T17> t17, AsyncValue<T18> t18, AsyncValue<T19> t19, AsyncValue<T20> t20) {
+    if (t1 is AsyncLoading || t2 is AsyncLoading || t3 is AsyncLoading || t4 is AsyncLoading || t5 is AsyncLoading || t6 is AsyncLoading || t7 is AsyncLoading || t8 is AsyncLoading || t9 is AsyncLoading || t10 is AsyncLoading || t11 is AsyncLoading || t12 is AsyncLoading || t13 is AsyncLoading || t14 is AsyncLoading || t15 is AsyncLoading || t16 is AsyncLoading || t17 is AsyncLoading || t18 is AsyncLoading || t19 is AsyncLoading || t20 is AsyncLoading) {
+      return const AsyncLoading();
+    }
+    try {
+      return AsyncData(Tuple20(t1.value as T1, t2.value as T2, t3.value as T3, t4.value as T4, t5.value as T5, t6.value as T6, t7.value as T7, t8.value as T8, t9.value as T9, t10.value as T10, t11.value as T11, t12.value as T12, t13.value as T13, t14.value as T14, t15.value as T15, t16.value as T16, t17.value as T17, t18.value as T18, t19.value as T19, t20.value as T20));
+    } catch (e, st) {
+      return AsyncError(e, st);
+    }
+  }
 }
