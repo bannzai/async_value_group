@@ -15,11 +15,8 @@ class TweetsPage extends HookConsumerWidget {
       ref.watch(tweetsProvider),
       ref.watch(userProvider),
     ).when(
-      data: (t) => t.a1.isEmpty
-          ? const TweetsEmpty()
-          : TweetsBody(tweets: t.a1, user: t.a2),
-      error: (error, st) =>
-          ErrorPage(error: error, reload: () => ref.refresh(tweetsProvider)),
+      data: (t) => t.a1.isEmpty ? const TweetsEmpty() : TweetsBody(tweets: t.a1, user: t.a2),
+      error: (error, st) => ErrorPage(error: error),
       loading: () => const Loading(),
     );
   }
