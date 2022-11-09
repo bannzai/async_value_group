@@ -1,5 +1,5 @@
 name: async_value_group
-description: A new Flutter package project.
+description: async_value_group is a a Dart library for grouping some riverpod AsyncValues into single AsyncValue.
 version: 1.0.0
 repository: https://github.com/bannzai/async_value_group
 
