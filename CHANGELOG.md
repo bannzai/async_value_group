@@ -1,2 +1,5 @@
 ## 0.0.1
-* initial release
+* initial release.
+
+## 1.0.0
+* Fix version.
