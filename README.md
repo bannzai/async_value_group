@@ -1,5 +1,5 @@
 ## Features
-async_value_group is a a Dart plugin for grouping multiple [riverpod](https://github.com/rrousselGit/riverpod) `AsyncValue` proceess.
+async_value_group is a a Dart library for grouping multiple [riverpod](https://github.com/rrousselGit/riverpod) `AsyncValue` proceess.
 - Grouping multiple AsyncValue and retrieve multiple data as a tuple.
 - Waiting to be done multiple asynchronous process.
 - Call `AsyncValue.when` only once in `Widget.build` method even if multiple AsyncValues are required.
