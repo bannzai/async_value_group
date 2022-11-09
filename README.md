@@ -4,22 +4,24 @@ async_value_group is a a Dart plugin for grouping multiple [riverpod](https://gi
 - Waiting to be done multiple asynchronous process.
 - Call `AsyncValue.when` only once in `Widget.build` method even if multiple AsyncValues are required.
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+class TweetsPage extends HookConsumerWidget {
+  const TweetsPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return AsyncValueGroup.group2(
+      ref.watch(tweetsProvider),
+      ref.watch(userProvider),
+    ).when(
+      data: (t) => t.a1.isEmpty
+          ? const TweetsEmpty()
+          : TweetsBody(tweets: t.a1, user: t.a2),
+      error: (error, st) =>
+          ErrorPage(error: error, reload: () => ref.refresh(tweetsProvider)),
+      loading: () => const Loading(),
+    );
+  }
+}
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
