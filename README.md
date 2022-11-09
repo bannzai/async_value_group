@@ -1,8 +1,8 @@
 ## Features
-async_value_group is a a Dart library for grouping multiple [riverpod](https://github.com/rrousselGit/riverpod) `AsyncValue` proceess.
-- Grouping multiple AsyncValue and retrieve multiple data as a tuple.
+async_value_group is a a Dart library for grouping some [riverpod](https://github.com/rrousselGit/riverpod) `AsyncValue`s into single `AsyncValue`.
+- Grouping some `AsyncValue`s into single `AsyncValue` and retrieve all `AsyncValue.data` as a tuple.
 - Waiting to be done multiple asynchronous process.
-- Call `AsyncValue.when` only once in `Widget.build` method even if multiple AsyncValues are required.
+- If you use hooks_riverpod, call `AsyncValue.when` only once in `Widget.build` method even if multiple AsyncValues are required.
 
 ## Usage
 ```dart
@@ -15,7 +15,7 @@ class TweetsPage extends HookConsumerWidget {
       ref.watch(tweetsProvider),
       ref.watch(userProvider),
     ).when(
-      data: (t) => t.a1.isEmpty ? const TweetsEmpty() : TweetsBody(tweets: t.a1, user: t.a2),
+      data: (t) => t.t1.isEmpty ? const TweetsEmpty() : TweetsBody(tweets: t.t1, user: t.t2),
       error: (error, st) => ErrorPage(error: error),
       loading: () => const Loading(),
     );
