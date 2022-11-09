@@ -1,6 +1,7 @@
 import 'package:async_value_group/tuple.dart';
 import 'package:riverpod/riverpod.dart';
 
+/// An extension that groups some [AsyncValue]s into a single [AsyncValue].
 extension AsyncValueGroup on AsyncValue {
   static AsyncValue<Tuple2<T1, T2>> group2<T1, T2>(
       AsyncValue<T1> t1, AsyncValue<T2> t2) {
