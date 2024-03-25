@@ -1,7 +1,7 @@
 import 'package:async_value_group/async_value_group.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:async_value_group/async_value_group.dart';
+import 'package:riverpod/riverpod.dart';
 
 void main() {
   test('Simple AsyncValue case', () {
