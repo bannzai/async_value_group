@@ -1,6 +1,6 @@
 name: async_value_group
 description: async_value_group is a a Dart library for grouping some riverpod AsyncValues into single AsyncValue.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/bannzai/async_value_group
 
 environment:
