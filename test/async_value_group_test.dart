@@ -1041,7 +1041,8 @@ void main() {
     });
     test("#AsyncError", () {
       const AsyncValue<int> t1 = AsyncData(1);
-      const AsyncValue<String> t2 = AsyncError(FormatException(""), StackTrace.empty);
+      const AsyncValue<String> t2 =
+          AsyncError(FormatException(""), StackTrace.empty);
       const AsyncValue<double> t3 = AsyncData(1.0);
       const AsyncValue<String> t4 = AsyncData("value");
       const AsyncValue<String> t5 = AsyncData("value");
@@ -1138,7 +1139,8 @@ void main() {
     });
     test("#AsyncError", () {
       const AsyncValue<int> t1 = AsyncData(1);
-      const AsyncValue<String> t2 = AsyncError(FormatException(""), StackTrace.empty);
+      const AsyncValue<String> t2 =
+          AsyncError(FormatException(""), StackTrace.empty);
       const AsyncValue<double> t3 = AsyncData(1.0);
       const AsyncValue<String> t4 = AsyncData("value");
       const AsyncValue<String> t5 = AsyncData("value");
@@ -1163,7 +1165,7 @@ void main() {
       expect(group is AsyncError, true);
     });
   });
-  
+
   group("group20", () {
     test("#AsyncValue", () {
       const AsyncValue<int> t1 = AsyncData(1);
@@ -1239,7 +1241,8 @@ void main() {
     });
     test("#AsyncError", () {
       const AsyncValue<int> t1 = AsyncData(1);
-      const AsyncValue<String> t2 = AsyncError(FormatException(""), StackTrace.empty);
+      const AsyncValue<String> t2 =
+          AsyncError(FormatException(""), StackTrace.empty);
       const AsyncValue<double> t3 = AsyncData(1.0);
       const AsyncValue<String> t4 = AsyncData("value");
       const AsyncValue<String> t5 = AsyncData("value");
